@@ -27,9 +27,9 @@ public class UserRestController {
 
         UserDto userDto = new UserDto();
         userDto.setUser(user);
+        
         // userDto.setUser(user.getName()); //esto pertenece a si dto tiene un estructura un poco diferente no anidada
         // userDto.setUser(user.lastName());
-
         //otro ejemplo donde quieres llamar solo el nombre completo de la persona
         //userDto.setName(user.getName().concat(" ").concat(user.getlastName())); //daria json name : "ivette valdivia"
         userDto.setTitle("Hola mundo Spring Boot");
