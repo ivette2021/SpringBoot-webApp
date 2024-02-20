@@ -13,8 +13,8 @@ public class UserController {
     public String details(Model model) { // primera forma con Model de pasar datos a la vista
 
           User user = new User("Ivette", "Valdivia Gomez");
+          user.setEmail("ivette@correo.com");
         model.addAttribute("title", "Hola mundo Spring Boot");
-        model.addAttribute("name", "Ivette");
         model.addAttribute("user", user);
 
         /*

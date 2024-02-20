@@ -1,6 +1,6 @@
 package com.ihiviko.springboot.webapp.springbootweb.controllers;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -12,7 +12,7 @@ import com.ihiviko.springboot.webapp.springbootweb.models.User;
 import com.ihiviko.springboot.webapp.springbootweb.models.dto.UserDto;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+// import org.springframework.web.bind.annotation.RequestParam;
 
 
 //este esta basado en la clase usercontroller

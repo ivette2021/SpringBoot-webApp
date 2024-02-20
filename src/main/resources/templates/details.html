@@ -10,6 +10,9 @@
     <ul>
         <li th:text ="${user.name}"></li>
         <li th:text ="${user.lastname}"></li>
+        <li th:if = "${user.email !=null]}" th:text ="${user.email}"></li> //si el user.email es distinto de null que lo muestre
+   <!-- <li th:if = "${not (user.email !=null)]}" th:text ="${'no tiene email'}"></li> //si es igual a null lo mostramos usando negacion -->
+        <li th:if = "${user.email == null}" th:text ="${'no tiene email'}"></li> //es lo mismo a lo anterior sin negacion
     </ul>
 </body>
 </html>
