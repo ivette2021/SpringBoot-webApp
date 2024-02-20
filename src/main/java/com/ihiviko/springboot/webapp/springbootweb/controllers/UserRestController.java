@@ -1,6 +1,9 @@
 package com.ihiviko.springboot.webapp.springbootweb.controllers;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +12,8 @@ import com.ihiviko.springboot.webapp.springbootweb.models.User;
 import com.ihiviko.springboot.webapp.springbootweb.models.dto.UserDto;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 //este esta basado en la clase usercontroller
 
@@ -36,6 +41,23 @@ public class UserRestController {
 
         return userDto;
 
+    }
+@GetMapping("/list")
+    public List<User> list(){
+        User user = new User("Phoebe", "Buffay");
+        User user2 = new User("Monica ", "Geller");
+        User user3 = new User("Rachel", "Green");
+
+//forma con arraylist es mas larga
+        // List<User> users = new ArrayList<>();
+        // users.add(user);
+        // users.add(user2);
+        // users.add(user3);
+
+//forma corta con helper en menos lineas de codigo:
+List<User> users = Arrays.asList(user,user2,user3);
+
+        return users;
     }
 
     // forma antigua
