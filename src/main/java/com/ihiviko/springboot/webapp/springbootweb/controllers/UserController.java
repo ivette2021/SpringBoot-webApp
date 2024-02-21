@@ -30,6 +30,7 @@ public class UserController {
          * model.put("name","Ivette");
          * model.put("lastname","Valdivia Gomez");
          */
+        
 
         return "details";
 
