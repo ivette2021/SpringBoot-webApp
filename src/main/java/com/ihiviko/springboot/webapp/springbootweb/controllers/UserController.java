@@ -29,6 +29,7 @@ public class UserController {
          * model.put("title","Hola mundo Spring Boot");
          * model.put("name","Ivette");
          * model.put("lastname","Valdivia Gomez");
+         * 
          */
         
 
